@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzz</title>
+
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(20px, auto);
+            margin-top: 20%;
+            overflow: auto;
+        }
+
+        div {
+
+
+            color: white;
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            div {
+                min-width: 120px;
+            }
+
+        }
+
+        .box1 {
+            background: black;
+        }
+
+        .box2 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: blue;
+        }
+
+        .box4 {
+            background-color: green;
+        }
+
+        .myButton {
+            background-color: #44c767;
+            -moz-border-radius: 28px;
+            -webkit-border-radius: 28px;
+            border-radius: 28px;
+            border: 1px solid #18ab29;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 10px 25px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f6627;
+            margin: 50px;
+        }
+
+        .myButton:hover {
+            background-color: #5cbf2a;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        input {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+            <input type="text" id="num">   
+            <input type="range" min="1" max="100" value="50" id="slider">
+            <button type="button" onclick="clearAll()">Delete</button>
+            <button type="button" onclick="generate()">Generate</button>
+            <button type="button" onclick="fizz()">Fizz</button>
+            <button type="button" onclick="buzz()">Buzz</button>
+
+
+
+    </div>
+
+
+
+    <main id="main"></main>
+
+    
+
+
+    <script src="fizzbuzz.js"></script>
+
+
+</body>
+
+</html>
